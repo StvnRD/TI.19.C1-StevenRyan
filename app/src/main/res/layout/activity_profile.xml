@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#696969"
+    tools:context=".Profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="717dp">
+
+                <ImageView
+                    android:id="@+id/imageTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_top" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgFoto"
+                    android:layout_width="130dp"
+                    android:layout_height="150dp"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/foto"
+                    app:civ_border_color="#fff"
+                    app:civ_border_width="5dp"
+                    app:layout_constraintBottom_toBottomOf="@id/imageTop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageTop" />
+
+                <TextView
+                    android:id="@+id/textName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UAS Pemrograman Mobile"
+                    android:textColor="@color/teal_200"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/imgFoto"
+                    app:layout_constraintEnd_toEndOf="@id/imgFoto"
+                    app:layout_constraintHorizontal_bias="0.51"
+                    app:layout_constraintStart_toStartOf="@id/imgFoto" />
+
+                <LinearLayout
+                    android:layout_width="342dp"
+                    android:layout_height="178dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textName"
+                    app:layout_constraintVertical_bias="1.0">
+
+                    <TextView
+                        android:id="@+id/textContact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="130dp"
+                        android:text="Contact Me :"
+                        android:textColor="@color/teal_200"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn6"
+                        android:layout_width="31dp"
+                        android:layout_height="31dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="140dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/ic6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textName"
+                    app:layout_constraintVertical_bias="0.0">
+                    android:layout_width=""
+                    android:layout_height="" >
+
+                    <TextView
+                        android:id="@+id/textNK"
+                        android:layout_width="272dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="66dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Steven Ryan Darmawan - TI.19.C1"
+                        android:textColor="@color/teal_200"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textTtg"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="66dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Ini adalah Project UAS yang berisi :"
+                        android:textColor="@color/teal_200"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textSplash"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="66dp"
+                        android:text="-  Splash Screen (Loading)"
+                        android:textColor="@color/teal_200"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="66dp"
+                        android:text="-  Login Menu"
+                        android:textColor="@color/teal_200"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textMainMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="66dp"
+                        android:text="-  Main Menu"
+                        android:textColor="@color/teal_200"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textProfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="66dp"
+                        android:text="-  Profil Menu"
+                        android:textColor="@color/teal_200"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
